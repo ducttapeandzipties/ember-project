@@ -1,0 +1,242 @@
+/** {
+  border: 1px black solid;
+}*/
+
+
+/*GENERAL ################################# */
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #262216;
+}
+
+/*HEADER ################################# */
+
+
+/*HEADER COLOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+header {
+  float: left;
+  background-color: #252839;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/*HEADER LINKS COLOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+header a {
+  text-decoration: none;
+  color: #f2b632;
+}
+
+#main_nav {
+  float: right;
+  padding-right: 20px;
+  font-family: 'Passion One', cursive;
+  font-size: 1.75em;
+}
+
+#logo {
+  float: left;
+  padding-left: 20px;
+  /*font-family: 'Open Sans', Sans Serif;*/
+  font-family: 'Lobster', cursive;
+
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+
+nav a {
+  display: block;
+}
+
+
+/*BODY ################################# */
+
+body {
+  font-family: 'Open Sans', Sans Serif;
+}
+
+
+/*BODY COLOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+body {
+  background-color: #b5b5b7;
+  color: black;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  /*padding: 0 5%
+  display:inline-block;
+  clear: both;*/
+}
+
+
+/*BUBBLES COLOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.bubbles {
+  color: #b5b5b7;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #677077;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/*.bubbles h1 {
+  text-align: center;
+}*/
+
+#cover_photo {
+  margin-right: 2%;
+  float: left;
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+}
+
+
+/*ABOUT.HTML ################################# */
+
+#gallery {
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  height: auto;
+  margin: 2.5%;
+  background-color: #bdc3c7;
+  color: #252839;
+  text-align: center;
+}
+
+/*CONTACT.HTML ################################# */
+
+#contactInfo li {
+  list-style: none;
+  font-family: 'Passion One', cursive;
+  font-size: 1.5em;
+  padding: 1%;
+}
+
+#contactInfo img {
+  height: auto;
+  width: auto;
+}
+
+/*FOOTER ################################# */
+
+footer {
+  /*center footer - may want to use different method*/
+  margin: auto;
+  width: 25%;
+  text-align: center;
+  display: block;
+}
+
+/*LIGHTBOX ################################# */
+
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+#overlay img {
+ margin-top: 5%;
+
+}
+
+#overlay p {
+ color:white;
+}
+
+
+/*RESPONSIVE ################################# */
+
+
+/*MOBILE SITE*/
+@media screen and (max-width: 750px){
+
+  /*body {
+    background-color: black;
+    color: black;
+  }*/
+
+  #gallery li {
+    float: left;
+    width: 75%;
+    margin: 6.25%;
+  }
+
+  #contactInfo li {
+    font-size: 1.2em;
+  }
+
+
+  nav li {
+    /*background: black;*/
+    border-radius: 8px;
+    display: block;
+    margin: 3% auto 3% auto;
+    width: 80%;
+    border: 3px solid #b5b5b7;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+
+  header {
+    float: none;
+    padding-bottom: 2%;
+  }
+  #main_nav {
+    float: none;
+    font-size: 1.2em;
+  }
+  #logo {
+    font-size: .8em;
+    display: block;
+  }
+}
+
+footer {
+  font-size: .7em;
+}
+
+/*@media screen and (max-width: 750px) and (min-width: 481px) {
+
+  #main_nav {
+    font-size: 1.5em;
+  }
+
+  nav li {
+    /*background: black;*/
+    border-radius: 8px;
+    display: block;
+    margin: 3% auto 3% auto;
+    width: 80%;
+    border: 3px solid #b5b5b7;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+
+}*/
