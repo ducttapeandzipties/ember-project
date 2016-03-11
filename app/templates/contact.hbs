@@ -1,1 +1,63 @@
 {{outlet}}
+<div id="wrapper">
+
+      <section class="bubbles">
+
+        <ul id="contactInfo">
+          <li>
+            <img src="img/phone.png">
+            757-876-0577
+          </li>
+
+          <li>
+            <img src="img/mail.png">
+            email@server.com
+          </li>
+
+          <li>
+            <img src="img/facebook.png">
+            <a href="https://www.facebook.com/scmobileauto/">facebook.com/scmobileauto/</a>
+          </li>
+        </ul>
+      </section>
+      <section class="bubbles">
+        <form>
+          <div>
+            <label for="name">Contact Form</label><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div>
+            <label for="">Repair Type</label><br>
+            <input type="radio" id="engine" value="engine" name="repair_type"><label for="engine">engine</label><br>
+            <input type="radio" id="wheel" value="wheel and tire" name="repair_type"><label for="wheel">wheel and tire</label><br>
+            <input type="radio" id="suspension" value="suspension" name="repair_type"><label for="suspension">suspension</label><br>
+            <input type="radio" id="brakes" value="brakes" name="repair_type"><label for="brakes">brakes</label><br>
+            <input type="radio" id="performance" value="performance" name="repair_type"><label for="performance">performance</label>
+          </div>
+
+          <div>
+            <label for="message">Message</label><br>
+            <textarea id="message" rows="12" cols="35"></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+          </div>
+
+        </form>
+      </section>
+</div>
