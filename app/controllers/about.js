@@ -18,16 +18,16 @@ export default Ember.Controller.extend({
           photoHTML += '<li>';
           photoHTML += '<a href= "' + photo.link + '">';
           photoHTML += '<img src="' + photo.media.m + '"></a></li>';
-      });   // end
+      });   // end each
 
     photoHTML += '</ul>';
     $('#photos').html(photoHTML);
-  }
+  }  // end displayFlickr
     $.getJSON(flickrAPI, flickrOptions, displayFlickr);
 
-  },
+  },  // end init
   actions: {
-    tester: function(){
+    clicker: function(){
       console.log('about js function fired');
     }
   }
