@@ -12,6 +12,10 @@ export default Ember.Controller.extend({
         format: "json"
       };
 
+// init was here
+
+
+
       function displayFlickr(data) {
         var photoHTML = '<ul>';
         $.each(data.items, function(li, photo){
@@ -28,8 +32,42 @@ export default Ember.Controller.extend({
   },  // end init
   actions: {
     clicker: function(){
-      console.log('about js function fired');
-    }
-  }
+      console.log('clicker function fired');
 
-});
+// lightbox.js code was here
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+var $caption = $("<p></p>");
+$overlay.append($image);
+$overlay.append($caption);
+$("body").append($overlay);
+console.log('append overlay');
+
+// $("#gallery a").click(function(event){
+//   event.preventDefault();
+  console.log("click");
+  var imageLocation = $(this).attr("href");
+  //Update overlay with the image linked in the link
+  $image.attr("src", imageLocation);
+  console.log('update overlay');
+
+  //Show the overlay.
+  $overlay.show();
+  console.log('$overlay.show');
+
+  //Get child's alt attribute and set caption
+  var captionText = $(this).children("img").attr("alt");
+  $caption.text(captionText);
+  console.log('set caption');
+// });  //end .click
+
+//When overlay is clicked
+$overlay.click(function(){
+  //Hide the overlay
+  $overlay.hide();
+});  // end overlay hide
+
+    }   // end clicker
+  }  // end actions
+
+});  // end Controller
