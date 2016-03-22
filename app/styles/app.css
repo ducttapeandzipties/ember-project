@@ -10,6 +10,10 @@ a {
 
 /*HEADER ################################# */
 
+#centerHeadline {
+  display:flex;
+  justify-content: center;
+}
 
 /*HEADER COLOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 header {
@@ -18,6 +22,7 @@ header {
   border-radius: 15px;
   margin-bottom: 20px;
   width: 100%;
+
 }
 
 /*HEADER LINKS COLOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -77,7 +82,7 @@ body {
 }
 
 
-/*BUBBLES COLOR @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*BUBBLES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .bubbles {
   color: #b5b5b7;
   padding: 20px;
@@ -86,6 +91,7 @@ body {
   background-color: #677077;
   border-radius: 15px;
   overflow: hidden;
+  clear: both;
 }
 
 /*.bubbles h1 {
@@ -106,23 +112,26 @@ body {
 #gallery {
   list-style: none;
 }
-
 #gallery li {
-  float: left;
-  width: 45%;
-  height: auto;
-  margin: 2.5%;
-  background-color: #bdc3c7;
-  color: #252839;
-  text-align: center;
+    background-color: #bdc3c7;
 }
 
+#gallery li,
 #photos li {
   float: left;
   width: 45%;
   height: auto;
   margin: 2.5%;
   color: #252839;
+  text-align: center;
+}
+
+#photos li {
+  /*float: left;
+  width: 45%;
+  height: auto;
+  margin: 2.5%;
+  color: #252839;*/
   list-style: none;
 }
 /*CONTACT.HTML ################################# */
@@ -178,12 +187,9 @@ footer {
 /*MOBILE SITE*/
 @media screen and (max-width: 750px){
 
-  /*body {
-    background-color: black;
-    color: black;
-  }*/
 
-  #gallery li {
+  #gallery li,
+  #photos li {
     float: left;
     width: 75%;
     margin: 6.25%;
@@ -195,7 +201,6 @@ footer {
 
 
   nav li {
-    /*background: black;*/
     border-radius: 8px;
     display: block;
     margin: 3% auto 3% auto;
@@ -222,6 +227,13 @@ footer {
 
 footer {
   font-size: .7em;
+}
+
+@media screen and (min-width: 1050px) {
+
+  header {
+    max-width: 1050px;
+  }
 }
 
 /*@media screen and (max-width: 750px) and (min-width: 481px) {
